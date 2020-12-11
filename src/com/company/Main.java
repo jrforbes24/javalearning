@@ -1,36 +1,27 @@
 package com.company;
 
+import java.sql.SQLOutput;
+
 public class Main {
 
     public static void main(String[] args) {
-	// if else code block
-        boolean isAlien = true;
-//      while isAlien is true the loop continues.
-        while (isAlien){
 
-            if (isAlien) {
-                System.out.println("I have never met an alien before.\n");
-                isAlien = false;
-            } else {
-                System.out.println("What's your name?");
-            }
+        double double1 = 20.00;
+        double double2 = 80.00;
+
+        double theBiggerNumber = (double2 + double1) * 100.00;
+
+        double remainder = theBiggerNumber % 40.00;
+
+        System.out.println("Remainder " + remainder);
+
+        boolean isItZero = (remainder == 0) ? true:false;
+
+        System.out.println("isItZero: " + isItZero);
+
+        if (!isItZero) {
+            System.out.println("Got some remainder");
         }
 
-//        next lesson
-        int topScore = 80;
-
-        if (topScore < 100){
-            System.out.println("You got the top score!");
-        }
-
-        int secondTopScore = 75;
-
-        if ((topScore > secondTopScore) && (topScore < 100)){
-            System.out.println("Greater then second top score and less than 100");
-        }
-//        next lesson #37
-        if ((topScore > 90) || (secondTopScore <= 90)) {
-            System.out.println(" Either or both of the conditions are true.");
-        }
     }
 }
